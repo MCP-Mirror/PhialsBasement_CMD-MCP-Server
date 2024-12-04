@@ -1,0 +1,37 @@
+{
+
+  "name": "@modelcontextprotocol/server-cmd",
+
+  "version": "1.0.0",
+
+  "description": "MCP server for executing CMD commands",
+
+  "main": "dist/index.js",
+
+  "type": "module",
+
+  "scripts": {
+
+      "build": "tsc",
+
+      "prepare": "npm run build"
+
+  },
+
+  "keywords": ["mcp", "cmd", "command-line"],
+
+  "author": "Your Name",
+
+  "license": "MIT",
+
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.0.1",
+    "glob": "^10.3.10",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3"
+  }
+}
