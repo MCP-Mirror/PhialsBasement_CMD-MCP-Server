@@ -12,7 +12,7 @@ A Model Context Protocol (MCP) server implementation for executing CMD commands.
 ## Installation
 
 ```bash
-npm install @modelcontextprotocol/server-cmd
+npm install server-cmd
 ```
 
 ## Prerequisites
@@ -23,7 +23,7 @@ npm install @modelcontextprotocol/server-cmd
 ## Usage
 
 ```typescript
-import { MCPCmdServer } from '@modelcontextprotocol/server-cmd';
+import { MCPCmdServer } from 'server-cmd';
 
 // Initialize the server
 const server = new MCPCmdServer();
