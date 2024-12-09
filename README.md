@@ -1,6 +1,6 @@
 # CMD MCP Server
 
-A Model Context Protocol (MCP) server implementation for executing CMD commands. This server allows you to integrate command-line operations with MCP-compatible applications.
+A Model Context Protocol (MCP) server implementation for executing CMD commands on both Windows and Linux, as well as allowing SSH connections. This server allows you to integrate command-line operations with MCP-compatible applications.
 
 ## Features
 
