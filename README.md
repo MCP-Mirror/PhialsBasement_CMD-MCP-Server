@@ -1,6 +1,7 @@
 # CMD MCP Server
 
 [![smithery badge](https://smithery.ai/badge/server-cmd)](https://smithery.ai/server/server-cmd)
+
 A Model Context Protocol (MCP) server implementation for executing CMD commands on both Windows and Linux, as well as allowing SSH connections. This server allows you to integrate command-line operations with MCP-compatible applications.
 
 <a href="https://glama.ai/mcp/servers/s83mqs6123"><img width="380" height="200" src="https://glama.ai/mcp/servers/s83mqs6123/badge" alt="cmd-mcp-server MCP server" /></a>
