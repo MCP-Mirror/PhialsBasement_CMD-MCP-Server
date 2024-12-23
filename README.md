@@ -1,5 +1,6 @@
 # CMD MCP Server
 
+[![smithery badge](https://smithery.ai/badge/server-cmd)](https://smithery.ai/server/server-cmd)
 A Model Context Protocol (MCP) server implementation for executing CMD commands on both Windows and Linux, as well as allowing SSH connections. This server allows you to integrate command-line operations with MCP-compatible applications.
 
 <a href="https://glama.ai/mcp/servers/s83mqs6123"><img width="380" height="200" src="https://glama.ai/mcp/servers/s83mqs6123/badge" alt="cmd-mcp-server MCP server" /></a>
@@ -13,6 +14,15 @@ A Model Context Protocol (MCP) server implementation for executing CMD commands 
 
 ## Installation
 
+### Installing via Smithery
+
+To install CMD Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/server-cmd):
+
+```bash
+npx -y @smithery/cli install server-cmd --client claude
+```
+
+### Manual Installation
 ```bash
 npm install server-cmd
 ```
