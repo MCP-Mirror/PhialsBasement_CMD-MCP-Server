@@ -31,5 +31,5 @@
   },
 	"bin": {
 		"server-cmd": "dist/index.js"
-	},
+	}
 }
