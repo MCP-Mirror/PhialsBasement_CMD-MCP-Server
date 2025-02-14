@@ -53,9 +53,9 @@ function initializePersistentCmd() {
         join(process.env.SystemRoot || 'C:\\Windows', 'System32', 'cmd.exe') : 
         '/bin/sh';
 
-    persistentCmd = spawn(shell, [], {
+    persistentCmd = spawn(isWindows ? 'cmd.exe' : '/bin/sh', [], {
         windowsHide: true,
-        shell: true
+        shell: true  // This ensures proper path resolution
     });
 
     persistentCmd.on('error', (error) => {
