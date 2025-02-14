@@ -296,7 +296,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                                 isError: true,
                             });
                         }
-                    }, 5000);
+                    }, 30000);
                 }
             });
         } else if (name === "execute_ssh_command") {
