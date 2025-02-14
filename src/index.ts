@@ -7,6 +7,7 @@ import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
 import { platform } from 'os';
 import { Client, ClientChannel } from 'ssh2';
+import { join } from 'path';
 
 // Schema definitions
 const ExecuteCommandArgsSchema = z.object({
@@ -48,8 +49,13 @@ function initializePersistentCmd() {
     const isWindows = platform() === 'win32';
     if (persistentCmd) return;
 
-    persistentCmd = spawn(isWindows ? 'cmd' : '/bin/sh', [], {
+    const shell = isWindows ? 
+        join(process.env.SystemRoot || 'C:\\Windows', 'System32', 'cmd.exe') : 
+        '/bin/sh';
+
+    persistentCmd = spawn(shell, [], {
         windowsHide: true,
+        shell: true
     });
 
     persistentCmd.on('error', (error) => {
